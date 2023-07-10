@@ -16,7 +16,7 @@ Open your web browser and navigate to http://localhost:3000.
 Use the input field to add new tasks to the to-do list.
 Click the "To Do" button to mark a task as "To Do".
 Click the "Done" button to mark a task as "Done".
-Double-click a task to edit its text.
+Double-click a task to edit its text
 Click the "Delete" button to remove a task from the list.
 Contributing
 If you would like to contribute to this project, follow these steps:
