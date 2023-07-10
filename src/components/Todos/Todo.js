@@ -1,43 +1,54 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Todo({ todo, deleteHandler, updateHandler }) {
-
   const [isEditing, setIsEditing] = useState(false);
-  const [updatedTodo, setUpdatedTodo] = useState();
+  const [updatedTodo, setUpdatedTodo] = useState({
+    id: todo.id,
+    message: todo.message
+  });
+  const [isDone, setIsDone] = useState(false);
 
   const updatedTodoState = e => {
-    // update the state with te value entered in the input
     setUpdatedTodo({
       id: todo.id,
       message: e.target.value
-    })
-    console.log(updatedTodoState)
-  }
+    });
+    console.log(updatedTodoState);
+  };
 
   const updateAndReset = (input, e) => {
     e.preventDefault();
     // call updateHandler with the input
-    updateHandler(input)
+    updateHandler(input);
     setIsEditing(false);
-    console.log(updateAndReset)
-  }
+    console.log(updateAndReset);
+  };
+
+  const handleDoneClick = () => {
+    setIsDone(true);
+  };
 
   return (
     <div>
-      {isEditing ?
+      {isEditing ? (
         <form onSubmit={e => updateAndReset(updatedTodo, e)}>
-          <input
-            type="text"
-            defaulValue={todo.message}
-            onChange={updatedTodoState}
-          />
+          <input type="text" defaultValue={todo.message} onChange={updatedTodoState} />
         </form>
-        :
+      ) : (
         <p onDoubleClick={() => setIsEditing(true)}>{todo.message}</p>
-      }
-      <button onClick={() => deleteHandler(todo.id)}>Delete</button>
+      )}
+      <div>
+        <button onClick={() => deleteHandler(todo.id)}>Delete</button>
+        {isDone ? (
+          <button style={{ backgroundColor: "green", color: "white" }}>Done</button>
+        ) : (
+          <button style={{ backgroundColor: "gray" }} onClick={handleDoneClick}>
+            To Do
+          </button>
+        )}
+      </div>
     </div>
-  )
+  );
 }
 
 export default Todo;
