@@ -1,35 +1,36 @@
-# TO DO LIST with Create React App
+# TO DO LIST com Create React App
 
-This project is a web application built with JavaScript, npm, and React. It allows users to create a to-do list and mark tasks as "To Do" or "Done".
+Este projeto é uma aplicação web construída com JavaScript e React. Permite aos usuários criar uma lista de tarefas e marcar as tarefas como "ToDo" ou "Done".
 
 ![Screenshot from 2023-07-10 02-50-55](https://github.com/KaioLemos/react_todo_app/assets/29989786/e0011f12-e994-4555-915e-91cb9c2c903d)
 
 
-## Installation
-### To install this project, follow these steps:
+## Instalação
+### Para instalar este projeto, siga estas etapas:
+- Clone o repositório para a sua máquina local.
+- Navegue até o diretório do projeto no seu terminal.
+- Execute npm install para instalar as dependências do projeto.
+  
+## Usar
 
-- Clone the repository to your local machine.
-- Navigate to the project directory in your terminal.
-- Run npm install to install the project dependencies.
-- Usage
+### Para utilizar este projeto, siga estes passos:
 
-## To use this project, follow these steps:
+- Navegue até o diretório do projeto no seu terminal.
+- Execute npm start para iniciar o servidor de desenvolvimento.
+- Abra seu navegador da web e acesse http://localhost:3000.
+- Utilize o campo de entrada para adicionar novas tarefas à lista de afazeres e clique em "Add".
+- Clique no botão "To do" e a tarefa será marcada como "Done".
+- Dê um Duplo clique em uma tarefa para editar seu texto, ao reiniciar a página as tarefas editadas serão atualizadas.
+- Clique no botão "Delete" para remover uma tarefa da lista.
+  
+## Contribuição
+### Se você deseja contribuir para este projeto, siga estes passos:
 
-- Navigate to the project directory in your terminal.
-- Run npm start to start the development server.
-- Open your web browser and navigate to http://localhost:3000.
-- Use the input field to add new tasks to the to-do list.
-- Click the "To Do" button to mark a task as "To Do".
-- Click the "Done" button to mark a task as "Done".
-- Double-click a task to edit its text
-- Click the "Delete" button to remove a task from the list.
+- Faça um fork do repositório para a sua própria conta do GitHub.
+- Clone o repositório para a sua máquina local.
+- Crie um novo branch para as suas alterações.
+- Faça as suas alterações e as cometa no seu branch.
+- Envie as suas alterações para o seu repositório forkado.
 
-## Contributing
-### If you would like to contribute to this project, follow these steps:
-
-- Fork the repository to your own GitHub account.
-- Clone the repository to your local machine.
-- Create a new branch for your changes.
-- Make your changes and commit them to your branch.
-- Push your changes to your forked repository.
-
+## Contato
+Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato comigo através do meu perfil no GitHub.
