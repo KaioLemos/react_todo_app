@@ -2,6 +2,9 @@
 
 This project is a web application built with JavaScript, npm, and React. It allows users to create a to-do list and mark tasks as "To Do" or "Done".
 
+![Screenshot from 2023-07-10 02-50-55](https://github.com/KaioLemos/react_todo_app/assets/29989786/e0011f12-e994-4555-915e-91cb9c2c903d)
+
+
 ## Installation
 ### To install this project, follow these steps:
 
